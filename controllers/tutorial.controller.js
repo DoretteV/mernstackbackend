@@ -99,7 +99,7 @@ exports.deleteAll = (req, res) => {
     .then((data) => {
       if (!data) {
         res.status(404).send({
-          message: `Cnnot delete tutorial with id=${id}. Maybe tutorial was not found!`,
+          message: `Cannot delete tutorial with id=${id}. Maybe tutorial was not found!`,
         });
       } else {
         res.send({
